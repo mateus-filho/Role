@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplicativo de Mapa com Banner de Imagem</title>
+    <link rel="stylesheet" href="style64.css" />
+  </head>
+  <body>
+    <!-- Banner com imagem da internet -->
+    <div class="banner">
+      <button class="button-top" onclick="alert('Botão do banner clicado!')">
+        <img src="imgefont/seta para a esquerdaee.png" alt="Imagem do Botão" />
+        <!-- Substitua "sua-imagem.png" pelo caminho da sua imagem -->
+      </button>
+      <!-- Botão no banner -->
+      <img src="imgefont/FUNDO.jpeg" alt="Banner do Aplicativo" />
+      <!-- Certifique-se de usar uma imagem de alta qualidade -->
+    </div>
+
+    <header>
+      <div class="button-container">
+        <!-- Botões podem ser adicionados aqui, se necessário -->
+      </div>
+    </header>
+
+    <!-- Adicionando uma seção de texto abaixo do banner -->
+    <div class="text-container">
+      <img
+        src="imgefont/pino-de-localizacao.png"
+        alt="Botão"
+        class="image-button"
+        onclick="alert('Botão clicado!')"
+      />
+      <!-- Imagem do botão -->
+    </div>
+
+    <div class="mapBox">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d107210.57762662589!2d-59.973931326976384!3d-3.030979239933863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1729004780487!5m2!1spt-BR!2sbr"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <!-- Rodapé com imagem centralizada -->
+    <div class="footer">
+      <div class="footer-content">
+        <img
+          src="imgefont/sinal-de-interrogacao.png"
+          alt="interrogacao"
+          class="footer-image"
+        />
+        <h2>HOW TO GET THERE?</h2>
+      </div>
+      <img src="imgefont/saida (2).png" alt="imgSaida" class="exit-image" />
+    </div>
+  </body>
+</html>

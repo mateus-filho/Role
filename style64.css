@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'League';
+  src: url('imgefont/LeagueGothic_SemiCondensed-Regular.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: "League", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background-color: black; /* Fundo preto para todo o corpo */
+}
+
+.banner {
+  width: 100%;
+  text-align: center;
+  position: relative; /* Para permitir o posicionamento absoluto do botão */
+  padding: 0; /* Removendo padding para que a imagem preencha o cabeçalho */
+  font-size: 20px;
+  font-weight: bold;
+  background-color: black; /* Fundo preto para o banner */
+}
+
+.banner img {
+  width: 100%;
+  height: 150px; /* Aumentando a altura para melhor visualização */
+  object-fit: cover; /* Ajusta a imagem para cobrir completamente a área do banner */
+}
+
+.button-top {
+  position: absolute; /* Posicionamento absoluto em relação ao banner */
+  top: 10px; /* Distância do topo */
+  left: 20px; /* Distância da esquerda */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  background-color: white(135, 206, 250, 0.7);
+  border: none; /* Remove a borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  padding: 5px; /* Espaçamento interno */
+}
+
+.button-top img {
+  width: 30px; /* Largura da imagem do botão */
+  height: 30px; /* Altura da imagem do botão */
+}
+
+header {
+  width: 100%; /* Mantendo a largura do cabeçalho */
+  height: 70px; /* Altura do cabeçalho */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  font-size: 24px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  padding: 0 20px;
+  background-color: #000000; /* Cor de fundo do cabeçalho */
+}
+
+.mapBox {
+  width: 200%; /* Garantindo que a caixa do mapa ocupe toda a largura */
+  height: calc(
+    5000vh - 790px
+  ); /* Altura do mapa (100vh menos a altura do banner e cabeçalho) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black; /* Fundo preto para a caixa do mapa */
+}
+
+iframe {
+  width: 200%; /* Ocupa 100% da largura da caixa do mapa */
+  height: 100%; /* Ocupa 100% da altura da caixa do mapa */
+  border: none; /* Removendo a borda */
+}
+
+.text-container {
+  color: white; /* Cor do texto */
+  text-align: center; /* Centralizando o texto */
+  margin: 20px 0; /* Margem superior e inferior */
+  display: flex; /* Usando flexbox para alinhar o texto e a imagem do botão */
+  align-items: center; /* Alinhando verticalmente */
+  justify-content: center; /* Centralizando horizontalmente */
+}
+
+.image-button {
+  margin-right: 10px; /* Espaço entre a imagem e o texto */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  width: 60px; /* Largura da imagem do botão */
+  height: 60px; /* Altura da imagem do botão */
+}
+
+.footer {
+  margin-top: -50px; /* Margem acima do rodapé */
+  display: flex;
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+  align-items: center; /* Centraliza horizontalmente */
+  width: 100%; /* Largura total para o rodapé */
+  padding: 0 20px; /* Padding nas extremidades do rodapé */
+}
+
+.footer-content {
+  display: flex;
+  align-items: center; /* Alinha a imagem e o título no centro verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  margin-top: 200px;
+}
+
+h2 {
+  text-decoration: underline;
+  text-align: center;
+  font-weight: 700; /* Torna o texto mais espesso */
+  font-size: 2em; /* Ajusta o tamanho da fonte */
+  color: white; /* Garante que o texto seja visível */
+  margin-left: 10px; /* Espaçamento entre a imagem e o texto */
+  white-space: nowrap;
+}
+
+.footer-image {
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  width: 39px; /* Largura da imagem do botão de interrogação */
+  height: 36px; /* Mantém a proporção da imagem */
+  margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.exit-image {
+  position: absolute;
+  bottom: -250px; /* Ajusta a imagem para o canto inferior com uma margem */
+  right: -110px; /* Ajusta a posição para o canto direito */
+  cursor: pointer;
+  width: 57px;
+  height: auto;
+}

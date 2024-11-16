@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "League";
+  src: url("imgefont/LeagueGothic_SemiCondensed-Regular.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: "League", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garantir que o corpo ocupe pelo menos 100% da altura da tela */
+  background-color: black;
+  color: white;
+  width: 108vw; /* Aumentando a largura da página */
+  overflow-x: hidden;
+}
+
+.banner {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: black;
+}
+
+.banner img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.button-top {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.button-top img {
+  width: 30px;
+  height: 30px;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+}
+
+.text-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+section.options {
+  flex: 1;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  overflow-y: auto;
+}
+span {
+  color: rgba(112, 180, 213, 0.826);
+}
+
+.options h2 {
+  background-color: rgb(87, 86, 86);
+  color: rgb(205, 205, 205);
+  padding: 15px 25px 15px 45px; /* Ajustando o padding para criar espaço para o círculo */
+  width: 65%;
+  text-align: left;
+  text-transform: uppercase;
+  border: 2px solid rgb(87, 86, 86);
+  margin: 0 auto;
+  border-radius: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+  position: relative; /* Necessário para posicionar o círculo */
+}
+
+.options h2:nth-child(-n + 4)::before {
+  content: "";
+  position: absolute;
+  top: -21px; /* Distância do topo */
+  left: 10px; /* Distância da esquerda */
+  width: 37px; /* Tamanho do círculo */
+  height: 37px; /* Tamanho do círculo */
+  background-color: rgb(181, 180, 180, 0.984); /* Cor cinza */
+  border-radius: 50%; /* Tornando-o um círculo */
+}
+
+.options h2:last-child {
+  background-color: rgb(127, 25, 2);
+  border: 2px solid rgb(127, 25, 2);
+}
+
+.image-button {
+  margin-right: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin-top: -8vh;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Aumente o espaço do footer para 100px ou mais */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+
+.footer-image {
+  position: absolute;
+  bottom: 60px; /* Ajusta a imagem para o canto inferior com uma margem */
+  right: 35px; /* Ajusta a posição para o canto direito */
+  cursor: pointer;
+  width: 37px;
+  height: auto;
+}
